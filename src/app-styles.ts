@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 export const ContainerApp = styled.div`
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
+  overflow: auto;
   text-align: center;
+`;
+
+export const ContainerView = styled.div`
+  padding: 0em 5em 0em 5em;
 `;

@@ -4,8 +4,8 @@ import { ContainerRedesSociais } from "./footer-styles";
 const RedesSociais = () => {
   return (
     <ContainerRedesSociais>
-      <img src={facebookLogo} />
       <img src={instagramLogo} />
+      <img src={facebookLogo} />
       <img src={linkedinLogo} />
     </ContainerRedesSociais>
   );

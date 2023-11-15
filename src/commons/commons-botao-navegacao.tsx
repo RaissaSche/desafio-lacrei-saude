@@ -1,4 +1,4 @@
-import { Botao } from "./footer-styles";
+import { Botao } from "./commons-styles";
 
 const BotaoNavegacao = (props: any) => {
   if (props.bold) {
