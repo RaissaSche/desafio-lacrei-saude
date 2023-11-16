@@ -1,5 +1,5 @@
-import { IConfiguracaoBotao } from "./commons-index";
-import { ContainerBotoesNavegacao, Botao } from "./commons-styles";
+import { IConfiguracaoBotao } from "./commons-index.ts";
+import { ContainerBotoesNavegacao, Botao } from "./commons-styles.ts";
 import { useNavigate } from "react-router-dom";
 
 interface BotoesNavegacaoProps {
@@ -8,10 +8,15 @@ interface BotoesNavegacaoProps {
 
 const BotoesNavegacao = (props: BotoesNavegacaoProps) => {
   const navigate = useNavigate();
+
   return (
     <ContainerBotoesNavegacao>
       {props.configuracoes.map((obj) => (
-        <Botao $bold={obj.isBold} onClick={() => navigate(obj.path)}>
+        <Botao
+          $negrito={obj.negrito}
+          $destaqueVerde={obj.destaqueVerde}
+          onClick={() => navigate(obj.endereco)}
+        >
           {obj.nome}
         </Botao>
       ))}
@@ -20,3 +25,5 @@ const BotoesNavegacao = (props: BotoesNavegacaoProps) => {
 };
 
 export default BotoesNavegacao;
+
+//

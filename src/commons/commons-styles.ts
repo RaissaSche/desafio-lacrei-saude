@@ -11,11 +11,14 @@ export const ContainerBotoesNavegacaoHome = styled(ContainerBotoesNavegacao)`
   gap: 4rem;
 `;
 
-export const ContainerView = styled.div`
+export const ContainerBasico = styled.div`
   display: flex;
   flex-direction: row;
-  padding-top: 4em;
   justify-content: space-around;
+`;
+
+export const ContainerView = styled(ContainerBasico)`
+  padding-top: 4em;
 `;
 
 export const ContainerTextos = styled.div`
@@ -25,22 +28,25 @@ export const ContainerTextos = styled.div`
   gap: 1em;
 `;
 
-export const Botao = styled.button<{ $bold?: boolean }>`
-  color: #1f1f1f;
+export const Botao = styled.button<{
+  $negrito?: boolean;
+  $destaqueVerde?: boolean;
+}>`
   font-family: Nunito, sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: ${(props) => (props.$bold ? "700" : "400")};
   line-height: normal;
   border: none;
   background-color: transparent;
+  color: ${(props) => (props.$destaqueVerde ? "#018762" : "#1f1f1f")};
+  font-weight: ${(props) => (props.$negrito ? "700" : "400")};
 
   &:hover {
     color: #727272;
   }
 `;
 
-export const BotaoVerde = styled(Botao)`
+export const BotaoVerde = styled.button`
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   font-weight: 700;
   font-size: 1.125rem;
@@ -49,12 +55,27 @@ export const BotaoVerde = styled(Botao)`
   color: #ffffff;
   border-radius: 0.5rem;
   background: #018762;
+  font-family: Nunito, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  border: none;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #4eab92;
+  }
 `;
 
 export const BotaoBranco = styled(BotaoVerde)`
   color: #018762;
   border: 2px solid #018762;
   background: #fff;
+
+  &:hover {
+    color: #4eab92;
+    background-color: #fff;
+    border-color: #4eab92;
+  }
 `;
 
 export const Titulo = styled.h1`
@@ -76,6 +97,11 @@ export const Texto = styled.h2`
   font-weight: 400;
   line-height: normal;
   text-align: left;
+`;
+
+export const LinhaVertical = styled.div`
+  border-left: 0.3rem solid #018762;
+  padding-right: 1em;
 `;
 
 export const Imagem = styled.img`

@@ -1,5 +1,6 @@
 export default interface IConfiguracaoBotao {
   nome: string;
-  isBold: boolean;
-  path: string;
+  negrito: boolean;
+  destaqueVerde: boolean;
+  endereco: string;
 }
