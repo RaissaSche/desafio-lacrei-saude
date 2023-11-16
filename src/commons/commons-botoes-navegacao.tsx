@@ -6,8 +6,6 @@ interface BotoesNavegacaoProps {
 }
 
 const BotoesNavegacao = (props: BotoesNavegacaoProps) => {
-  props.configuracoes.forEach((valor, chave) => console.log(valor, chave));
-
   return (
     <ContainerBotoesNavegacao>
       {props.configuracoes.map((obj) => (

@@ -7,5 +7,5 @@ export const ContainerApp = styled.div`
 `;
 
 export const ContainerView = styled.div`
-  padding: 0em 5em 0em 5em;
+  padding: 0em 4em 0em 4em;
 `;

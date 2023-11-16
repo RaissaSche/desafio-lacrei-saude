@@ -24,6 +24,6 @@ export const Texto = styled.p`
 `;
 
 export const Divisor = styled.hr`
-  width: 80em;
+  width: 99%;
   border-left: 1px solid #b0e0d3;
 `;
