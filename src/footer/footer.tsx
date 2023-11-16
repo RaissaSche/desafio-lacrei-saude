@@ -1,12 +1,12 @@
-import { IConfiguracaoBotao, BotoesNavegacao } from "../commons/commons-index";
+import { BotoesNavegacao, IConfiguracaoBotao} from "../commons/commons-index";
 import { ContainerFooter, Divisor, Texto } from "./footer-styles";
 import RedesSociais from "./footer-redes-sociais";
 
 const Footer = () => {
   let configuracoesFooter = new Array<IConfiguracaoBotao>(
-    { nome: "Home", isBold: true },
-    { nome: "Pessoa Usuária", isBold: false },
-    { nome: "Profissional", isBold: false }
+    { nome: "Home", isBold: true, path: "/home" },
+    { nome: "Pessoa Usuária", isBold: false, path: "/pessoa-usuaria" },
+    { nome: "Profissional", isBold: false, path: "/profissional" }
   );
 
   return (

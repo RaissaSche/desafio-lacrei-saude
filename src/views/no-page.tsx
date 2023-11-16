@@ -1,9 +1,14 @@
+import { Footer, Header } from "..";
 import { PaginaNaoEncontrada } from "../commons/commons-styles";
 
-    const NoPage = () => {
-    return (
+const NoPage = () => {
+  return (
+    <>
+      <Header />
       <PaginaNaoEncontrada>404</PaginaNaoEncontrada>
-    );
-  };
-  
-  export default NoPage;
+      <Footer />
+    </>
+  );
+};
+
+export default NoPage;

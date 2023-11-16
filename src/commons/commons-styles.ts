@@ -12,7 +12,7 @@ export const ContainerBotoesNavegacaoHome = styled(ContainerBotoesNavegacao)`
 `;
 
 export const ContainerView = styled.div`
- display: flex;
+  display: flex;
   flex-direction: row;
   padding-top: 4em;
   justify-content: space-around;
@@ -41,20 +41,20 @@ export const Botao = styled.button<{ $bold?: boolean }>`
 `;
 
 export const BotaoVerde = styled(Botao)`
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-font-weight: 700;
-font-size: 1.125rem; 
-width: 12rem;
-height: 3rem;
-color: #FFFFFF;
-border-radius: 0.5rem;
-background: #018762;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+  font-size: 1.125rem;
+  width: 12rem;
+  height: 3rem;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  background: #018762;
 `;
 
 export const BotaoBranco = styled(BotaoVerde)`
-color: #018762;
-border: 2px solid #018762;
-background: #FFF;
+  color: #018762;
+  border: 2px solid #018762;
+  background: #fff;
 `;
 
 export const Titulo = styled.h1`
@@ -83,8 +83,8 @@ export const Imagem = styled.img`
 `;
 
 export const PaginaNaoEncontrada = styled.h1`
-color: #018762;
-font-family: Nunito, sans-serif;
+  color: #018762;
+  font-family: Nunito, sans-serif;
   font-size: 130px;
   font-style: normal;
   font-weight: 700;

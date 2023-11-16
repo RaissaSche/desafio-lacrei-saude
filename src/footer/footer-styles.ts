@@ -11,6 +11,7 @@ export const ContainerFooter = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1em;
+  padding-left: 4em;
 `;
 
 export const Texto = styled.p`
@@ -24,6 +25,7 @@ export const Texto = styled.p`
 `;
 
 export const Divisor = styled.hr`
-  width: 99%;
+  width: 95%;
   border-left: 1px solid #b0e0d3;
+  margin-left: 0;
 `;

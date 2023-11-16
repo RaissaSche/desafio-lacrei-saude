@@ -1,15 +1,19 @@
-import { IConfiguracaoBotao, BotaoNavegacao } from "./commons-index";
-import { ContainerBotoesNavegacao } from "./commons-styles";
+import { IConfiguracaoBotao } from "./commons-index";
+import { ContainerBotoesNavegacao, Botao } from "./commons-styles";
+import { useNavigate } from "react-router-dom";
 
 interface BotoesNavegacaoProps {
   configuracoes: Array<IConfiguracaoBotao>;
 }
 
 const BotoesNavegacao = (props: BotoesNavegacaoProps) => {
+  const navigate = useNavigate();
   return (
     <ContainerBotoesNavegacao>
       {props.configuracoes.map((obj) => (
-        <BotaoNavegacao nomeBotao={obj.nome} bold={obj.isBold} />
+        <Botao $bold={obj.isBold} onClick={() => navigate(obj.path)}>
+          {obj.nome}
+        </Botao>
       ))}
     </ContainerBotoesNavegacao>
   );
